@@ -4,7 +4,8 @@ A beautiful, Spotify Wrapped-style visualization of your GitHub year. See your c
 
 **🔍 SEO Keywords**: GitHub Wrapped, GitHub Year in Review, GitHub Stats, Developer Analytics, Coding Year Summary, GitHub Contributions, Developer Wrapped, Code Statistics, GitHub Annual Report
 
-![GitHub Wrapped Preview](https://via.placeholder.com/800x400?text=GitHub+Wrapped+Preview)
+<img width="1792" height="2810" alt="github-wrapped-RakshitKhajuria-2025" src="https://github.com/user-attachments/assets/0e70443b-6022-4cae-9262-35891b9b13fa" />
+
 
 ## ✨ Features
 

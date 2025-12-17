@@ -6,7 +6,7 @@ import { SimpleCounter } from "@/components/ui/AnimatedCounter";
 import type { WrappedData } from "@/lib/types";
 import { fadeInUp, orchestration } from "@/lib/animations";
 import { durations } from "@/lib/motion";
-import { GradientGrainBackground } from "@/components/backgrounds/GradientGrainBackground";
+import { RadialSpotlightBackground } from "@/components/backgrounds/RadialSpotlightBackground";
 
 interface ReviewsSlideProps {
   data: WrappedData;
@@ -22,41 +22,41 @@ export function ReviewsSlide({ data }: ReviewsSlideProps) {
   };
 
   return (
-    <GradientGrainBackground
-      colors={["#581c87", "#6b21a8", "#701a75"]}
-      orbColors={["rgba(147, 51, 234, 0.3)", "rgba(168, 85, 247, 0.3)"]}
+    <RadialSpotlightBackground
+      spotlightColor="#a855f7"
+      spotlightIntensity={0.3}
       className="overflow-y-auto overflow-x-hidden"
     >
       <div className="h-full w-full flex flex-col items-center justify-center p-6 md:p-8 relative">
         {/* Floating eye icons */}
         <div className="absolute inset-0 pointer-events-none">
           {[...Array(12)].map((_, i) => (
-        <motion.div
+            <motion.div
               key={i}
               className="absolute"
               style={{
                 left: `${5 + (i % 4) * 30}%`,
                 top: `${10 + Math.floor(i / 4) * 30}%`,
               }}
-          animate={{
+              animate={{
                 y: [0, -40, 0],
                 opacity: [0, 0.35, 0],
                 rotate: [0, 20, -20, 0],
                 scale: [0.7, 1, 0.7],
-          }}
-          transition={{
+              }}
+              transition={{
                 duration: 5 + i * 0.3,
-            repeat: Infinity,
+                repeat: Infinity,
                 delay: i * 0.1,
-            ease: "easeInOut",
-          }}
+                ease: "easeInOut",
+              }}
             >
               <Eye className="w-8 h-8 text-white/12" />
             </motion.div>
           ))}
-      </div>
+        </div>
 
-      {/* Content */}
+        {/* Content */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -159,8 +159,8 @@ export function ReviewsSlide({ data }: ReviewsSlideProps) {
             : "Every review makes code better! ✨"}
         </motion.p>
       </motion.div>
-    </div>
-    </GradientGrainBackground>
+      </div>
+    </RadialSpotlightBackground>
   );
 }
 

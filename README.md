@@ -35,7 +35,7 @@ A beautiful, Spotify Wrapped-style visualization of your GitHub year. See your c
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/github-year-in-review.git
+git clone https://github.com/RakshitKhajuria/github-year-in-review.git
 cd github-year-in-review
 
 # Install dependencies
@@ -153,7 +153,7 @@ github-wrapped/
 
 ### Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/github-year-in-review)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RakshitKhajuria/github-year-in-review)
 
 ### One-Click Deploy
 
